@@ -7,7 +7,7 @@ Build an Ai-driven incident response platform that:
 - Calculates severity score
 - Tracks incident lifecycle
 - Display dashboard metrics
-## Week-1
+
 
 ## Requirement Finalization
 
