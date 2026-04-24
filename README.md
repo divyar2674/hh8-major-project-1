@@ -1,37 +1,34 @@
-# AI Incident Response & Automated Playbook System
+# T10 - AI Incident Response & Automated Playbook System
 
-## **Objectives**
-Build an Ai-driven incident response platform that:
-- Accepts security alerts 
-- Classifies incidents 
-- Calculates severity score
-- Tracks incident lifecycle
-- Display dashboard metrics
+## Overview
+An AI-driven Incident Response platform that automatically classifies security incidents, assigns severity scores, recommends response actions, and executes predefined automated playbooks.
 
+## Architecture
+- **Frontend**: React.js (Vite) with modern UI
+- **Backend**: Python FastAPI
+- **Database**: SQLite (dev) / PostgreSQL (prod)
+- **AI Engine**: Rule-based + ML classification
 
-## Requirement Finalization
+## Quick Start
 
-### Functional Requirements 
-    - Accept security alerts (Manual / API)
-    - Store alert details in database
-    - Convert alerts into incidents
-    - Classify incidents (rule-based – MVP)
-    - Calculate severity score (0–100)
-    - Assign severity level (Critical / High / Medium / Low)
-    - Map incidents to predefined playbooks.
-    - Execute and track playbook steps.
-    - Manage incident lifecycle (Open-Investigating-Contained-Resolved-Closed).
-    - Maintain status history and audit logs
-    - Display dashboard metrics.
-    - Support role-based access.
+### Backend
+```bash
+cd backend
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
 
-### Modules:
-    - Alert Intake Module 
-    - Incident Management Module 
-    - Classification Engine 
-    - Severity Scoring Engine
-    - Playbook Automation Module 
-    - Incident Lifecycle Management 
-    - Dashboard & Reporting Module
-    - Audit & User Management Module 
+### Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
 
+## Modules
+- Incident Intake & Classification Engine
+- Severity & Risk Scoring Engine  
+- Automated Playbook Engine
+- Incident Lifecycle Management
+- AI Recommendation Layer
+- Real-time Response Dashboard
